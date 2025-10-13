@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 7</title>
+    <style>
+      .header-blue {
+        background-color: rgb(255, 255, 255);
+        color: rgb(18, 190, 18);
+        padding: 15px;
+        text-align: center;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header-blue">Đăng kí tham gia chương trình khuyến mãi</h1>
+    <table border="1">
+      <tr>
+        <th>Họ tên</th>
+        <td><input type="text" name="name" /></td>
+      </tr>
+      <tr>
+        <th>Địa chỉ</th>
+        <td><input type="text" name="address" /></td>
+      </tr>
+      <tr>
+        <th>Số điện thoại</th>
+        <td><input type="tel" name="phone" /></td>
+      </tr>
+      <tr>
+        <th>Phái</th>
+        <td>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Nam</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Nữ</label>
+        </td>
+      </tr>
+      <tr>
+        <th>Nghề nghiệp</th>
+        <td>
+          <select name="occupation">
+            <option value="student">Học sinh/Sinh viên</option>
+            <option value="employee">Nhân viên văn phòng</option>
+            <option value="teacher">Giáo viên</option>
+            <option value="farmer">Nông dân</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Chọn sản phẩm tham gia</th>
+        <td>
+          <select id="products" name="products" size="4" multiple>
+            <option value="kem-danh-rang">Kem đánh răng</option>
+            <option value="bot-giat">Bột giặt</option>
+            <option value="dau-goi-dau">Dầu gội đầu</option>
+            <option value="sua-tam">Sữa tắm</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Số người dự đoán tham gia</th>
+        <td>
+          <input type="number" min="1" />
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <button type="submit">Đăng kí</button>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2"> Bạn đã đăng kí thành công</th>
+      </tr>
+    </table>
+  </body>
+</html>
